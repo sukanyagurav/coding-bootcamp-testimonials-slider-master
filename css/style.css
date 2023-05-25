@@ -32,10 +32,8 @@ body {
 .slider {
   display: flex;
   flex-direction: column;
-  gap: 5rem;
   justify-content: center;
-  position: relative;
-  margin: 0 auto; }
+  position: relative; }
   .slider-image {
     margin: 0 auto;
     display: flex;
@@ -46,7 +44,7 @@ body {
       position: relative;
       margin-top: 2.3rem;
       border-radius: 10px; }
-      @media (min-width: 800px) {
+      @media (min-width: 740px) {
         .slider-image .user-image {
           width: 350px; } }
     .slider-image .bg {
@@ -55,25 +53,27 @@ body {
       top: 0;
       z-index: -1;
       left: -41%; }
-      @media (min-width: 800px) {
+      @media (min-width: 740px) {
         .slider-image .bg {
           width: 476px;
           left: -29%;
           top: -2%; } }
-    @media (min-width: 800px) {
+    @media (min-width: 740px) {
       .slider-image {
         order: 2; } }
   .slider-description {
     text-align: center;
     font-size: 1.5rem;
     position: relative;
-    margin-top: 3rem; }
-    @media (min-width: 800px) {
+    margin-top: 3rem;
+    letter-spacing: 0.2px;
+    line-height: 1.4; }
+    @media (min-width: 740px) {
       .slider-description {
         order: 1;
         text-align: left;
         position: relative;
-        left: 10%;
+        left: calc(100% - 92%);
         z-index: 10; } }
   .slider-description::before {
     position: absolute;
@@ -88,7 +88,7 @@ body {
     background-size: cover;
     width: 100px;
     height: 100px; }
-    @media (min-width: 800px) {
+    @media (min-width: 740px) {
       .slider-description::before {
         left: 10%; } }
   .slider-user {
@@ -99,7 +99,7 @@ body {
     gap: 0.5rem; }
     .slider-user span {
       font-size: 1rem; }
-    @media (min-width: 800px) {
+    @media (min-width: 740px) {
       .slider-user {
         flex-direction: row; } }
     .slider-user :first-child {
@@ -122,16 +122,15 @@ body {
       background: transparent;
       border: none;
       cursor: pointer; }
-    @media (min-width: 800px) {
+    @media (min-width: 740px) {
       .slider-buttons {
         left: 10%; } }
-  @media (min-width: 800px) {
+  @media (min-width: 740px) {
     .slider {
       max-width: 850px;
       width: 100%;
       flex-direction: row;
-      align-items: center;
-      gap: 2rem; } }
+      align-items: center; } }
 
 .left-animation {
   animation: fromLeft 0.5s ease-in;

@@ -24,6 +24,11 @@ body{
     font-family: 'Inter', sans-serif;
     font-weight: 300;
     overflow-x: hidden;
+    background-image: url('../images/pattern-curve.svg');
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    background-size: 700px ;
+
 }
 .slider{
     display:flex;
@@ -78,14 +83,17 @@ body{
     }
     &-description::before{
         position: absolute;
-        content: "\201C";
+        content:"";
         top: -4rem;
         left: 35%;
         font-size: 15rem;
         opacity: 0.4;
         line-height: 1;
         z-index: -1;
-        color:var(--color-light-blue);
+        background-image: url('../images/pattern-quotes.svg');
+        background-size: cover;
+        width:100px;
+        height:100px;
         @media(min-width:800px){
             left:10%;
         }

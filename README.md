@@ -4,11 +4,14 @@
 
 ## Hi SG Here! 👋
 
-Thanks for checking out my solution.
+Thanks for checking out my solution.🚀
 
 **Technologies used in projects are below**
+
 **➤ HTML5**
+
 **➤ CSS**
+
 **➤ SASS**
+
 **➤ JS**
-**Have fun building!** 🚀

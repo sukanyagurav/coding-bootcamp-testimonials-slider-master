@@ -26,17 +26,15 @@ function showData(slider='next'){
     if(slider){
         if(slider==='prev'){
             userImage.classList.add('left-animation')
-           setTimeout(()=>{
-            userImage.classList.remove('left-animation')
-           },500) 
+            setTimeout(()=>{
+                userImage.classList.remove('left-animation')
+            },500) 
         }
         else if(slider==='next'){
-            if(slider==='next'){
                 userImage.classList.add('right-animation')
-               setTimeout(()=>{
-                userImage.classList.remove('right-animation')
-               },500)
-        }
+                setTimeout(()=>{
+                    userImage.classList.remove('right-animation')
+                },500)
         }
     }
     userImage.src=currentSlide.img
@@ -44,11 +42,11 @@ function showData(slider='next'){
     userText.classList.add('bottom-animation')
     setTimeout(()=>{
         userText.classList.remove('bottom-animation')
-       },500)
-       userDetails.classList.add('textAnimation')
-       setTimeout(()=>{
-           userDetails.classList.remove('textAnimation')
-          },500)
+    },500)
+    userDetails.classList.add('textAnimation')
+    setTimeout(()=>{
+        userDetails.classList.remove('textAnimation')
+    },500)
     userName.textContent=currentSlide.name;
     userProfession.textContent=currentSlide.profession;
 }

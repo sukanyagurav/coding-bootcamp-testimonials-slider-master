@@ -53,20 +53,19 @@ function showData(slider='next'){
 window.addEventListener('DOMContentLoaded',function(){
     showData()
 })
-console.log(sliderButtons)
 sliderButtons.addEventListener("click",function(e){
-    if(e.target.classList.contains('prev')){
+    if(e.target.classList.contains('next')){
         currentItem++;
         if(currentItem > data.length-1){
             currentItem = 0;
         }
-        showData('prev')
+        showData('next')
     }
-    else if(e.target.classList.contains('next')){
+    else if(e.target.classList.contains('prev')){
         currentItem--;
         if(currentItem < 0 ){
             currentItem = data.length-1;
         }
-        showData('next')
+        showData('prev')
     }
 })
